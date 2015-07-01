@@ -35,9 +35,21 @@ p {
 	clear: both;
 }
 .one-half, .one-third, .one-fourth {
-	width:96%;
 	float: left;
 	position: relative;
 	min-height: 1px;
-	margin: 0 2% 20px;
+	margin: 2%;
 }
+
+.one-half {
+	width: 46%;
+}
+
+.one-third {
+	width: 29%;
+}
+
+
+
+
+
