@@ -8,6 +8,24 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Bree-Serif", Helvetica, Arial, sans-serif;
 }
+
+/* benefits section styles */
+
+.feature1, .feature2, .feature3 {
+	width: 100%;
+	padding: 50px 0;
+	background-color: #dadada;
+}
+
+.feature2 {
+	background-color: #ffffff;
+}
+
+.notes, .images, .links {
+	width: 90%;
+	margin: 0 auto;
+}
+
 /* Checkpoint 29 homework- adding animated.css */
 
 .animated {
