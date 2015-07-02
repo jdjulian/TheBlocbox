@@ -34,10 +34,26 @@ p {
 .container:after {
 	clear: both;
 }
-.one-half, .one-third, .one-fourth {
+.one-half {
 	width:96%;
 	float: left;
 	position: relative;
 	min-height: 1px;
 	margin: 0 2% 20px;
+}
+
+.one-third {
+	width:29%;
+	float: left;
+	position: relative;
+	min-height: 1px;
+	margin: 15px;
+}
+
+.one-fourth {
+	width:96%;
+	float: left;
+	position: relative;
+	min-height: 1px;
+	margin: 13px;
 }
