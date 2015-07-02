@@ -34,6 +34,7 @@ p {
 .container:after {
 	clear: both;
 }
+<<<<<<< HEAD
 .one-half {
 	width:96%;
 	float: left;
@@ -57,3 +58,24 @@ p {
 	min-height: 1px;
 	margin: 13px;
 }
+=======
+.one-half, .one-third, .one-fourth {
+	float: left;
+	position: relative;
+	min-height: 1px;
+	margin: 2%;
+}
+
+.one-half {
+	width: 46%;
+}
+
+.one-third {
+	width: 29%;
+}
+
+
+
+
+
+>>>>>>> c4a8c069807043c1721a4b0333883a3060f001b5
