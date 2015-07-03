@@ -9,6 +9,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "Bree-Serif", Helvetica, Arial, sans-serif;
 }
 
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
 /* benefits section styles */
 
 .feature1, .feature2, .feature3 {
@@ -91,6 +97,12 @@ p {
 	padding-right: 15px;
 	position: relative;
 }
+
+li {
+	display: inline;
+	margin: 2px;
+	float: right;
+}
 .container:before,
 .container:after {
 	content: " ";
@@ -102,10 +114,10 @@ p {
 <<<<<<< HEAD
 .one-half {
 	width:96%;
-	float: left;
+	float: right;
 	position: relative;
 	min-height: 1px;
-	margin: 0 2% 20px;
+	margin: 20px;
 }
 
 .one-third {
