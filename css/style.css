@@ -115,7 +115,12 @@ p {
 }
 
 
-/* html, body{
+/* For each CSS note that follows after this, I have deleted the ending * and / 
+so that it omits all the CSS below this point. Just add the * and / to each CSS note 
+to re-instate everything below this point.
+
+
+html, body{
 	overflow-x: hidden;
 }
 body {
