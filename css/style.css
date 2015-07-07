@@ -20,9 +20,20 @@ p {
 	font-weight: 100;
 }
 .container-hero, .top-nav, .logo, .images, .pricing, .container, .box {
-	background-color: #dadada;
+	background-color: blue;
 }
+
+.logo {
+	float: left;
+	display: block;
+}
+
 /* Top Container */
+
+.top-nav ul {
+float: right;
+}
+
 .top-nav li {
 	display: inline;
 	margin: 0 10 0 0;
