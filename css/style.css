@@ -21,15 +21,29 @@ p {
 	font-weight: 100;
 }
 .container-hero, .top-nav, .logo, .images, .pricing, .container, .box {
-	background-color: #dadada;
+	background-color: blue;
 }
 
+.logo {
+	float: left;
+	display: block;
+}
+
+<<<<<<< HEAD
 
 /* Top Container */
 
 .top-nav img {
 	position: absolute;
 }
+=======
+/* Top Container */
+
+.top-nav ul {
+float: right;
+}
+
+>>>>>>> 3994cc52a0f1d08d403d417b6b3c50d3abe7df0f
 .top-nav li {
 	margin: 0 10 0 0;
 	float: right;
