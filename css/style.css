@@ -1,3 +1,4 @@
+/* CSS for test.html */
 html, body{
 	overflow-x: hidden;
 }
@@ -6,16 +7,138 @@ body {
 	color:#333333;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Bree-Serif", Helvetica, Arial, sans-serif;
+	font-family: "Bree serif", Helvetica, Arial, sans-serif;
+}
+h2 {
+	font-size: 28px;
+	font-weight: normal;
+	margin-botton: 5px;
+}
+p {
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 100;
+}
+.container-hero, .top-nav, .logo, .images, .pricing, .container, .box {
+	background-color: #dadada;
+}
+/* Top Container */
+.top-nav li {
+	display: inline;
+	margin: 0 10 0 0;
+	float: right;
+}
+.top-nav:before,
+.top-nav:after {
+	content: " ";
+	display: table;
+} 
+.top-nav:after {
+	clear: both;
+}
+.container-hero h1 {
+	padding-left: 50%;
+	text-align: center;
+}
+.container-hero p {
+	padding-left: 50%;
+	text-align: center;
+	padding-bottom: 100px;
+}
+.container-hero img {
+	margin-left: 25%;
+	padding-top: 100px;
 }
 
-img {
-	max-width: 100%;
-	max-height: 100%;
+/* Notes & Links */
+.notes h2, .links h2 {
+	padding-right: 50%;
+	padding-top: 50px;
+	text-align: center;
+}
+.notes p, .links p {
+	padding-right: 50%;
+	text-align: center;
+}
+.notes img, .links img {
+	padding-left: 75%;
+	padding-bottom: 50px;
+}
+
+/* Images */
+.images h2 {
+	padding-left: 50%;
+	text-align: center;
+	}
+.images p {
+	padding-left: 50%;
+	padding-bottom: 100px;
+	text-align: center;
+}
+.images img {
+	padding-left: 25%;
+	padding-top: 50px;
+}
+
+/* Pricing */
+.pricing h2, .pricing p {
+	text-align: center;
+}
+.one-third {
+	width:29%;
+	float: left;
+	position: relative;
+	min-height: 1px;
+	margin: 2%;
+	text-align: center;
+
+}
+.pricing:before,
+.pricing:after {
+	content: " ";
+	display: table;
+} 
+.pricing:after {
+	clear: both;
+}
+
+/* Footer */
+.left-footer p {
+	font-size: 12px;
+}
+.link-middle-footer li {
+	display: inline;
+	font-size: 12px;
+}
+.right-footer img {
+	float: right;
 }
 
 
-/* benefits section styles */
+/* html, body{
+	overflow-x: hidden;
+}
+body {
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	color:#333333;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Bree serif", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+	font-size: 28px;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+p {
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 100;
+}
+
+
+/* benefits section styles *
 
 .feature1, .feature2, .feature3 {
 	width: 100%;
@@ -32,7 +155,7 @@ img {
 	margin: 0 auto;
 }
 
-/* Checkpoint 29 homework- adding animated.css */
+/* Checkpoint 29 homework- adding animated.css *
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -89,7 +212,7 @@ p {
 	line-height: 19px;
 	font-weight: 100;
 }
-/* GRID */
+/* GRID *
 .container {
 	margin-right: auto;
 	margin-left: auto;
@@ -156,3 +279,5 @@ li {
 
 
 >>>>>>> c4a8c069807043c1721a4b0333883a3060f001b5
+
+*/
