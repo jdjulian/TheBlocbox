@@ -20,7 +20,7 @@ p {
 	line-height: 19px;
 	font-weight: 100;
 }
-.container-hero, .top-nav, .logo, .images, .pricing, .container, .box, .footer{
+.container-hero, .top-nav, .logo, .images, .pricing, .container, .box {
 	background-color: #212F54;
 	color: white;
 }
@@ -35,21 +35,18 @@ p {
 .top-nav img {
 	position: absolute;
 }
-
 .top-nav li {
 	margin: 0 10 0 0;
 	float: right;
 	color: white;
 }
-
 .top-nav:before,
 .top-nav:after {
-	display: table;
+	content: "";
 } 
-.top-nav:after {
+.top-nav:after, {
 	clear: both;
-}
-
+} 
 .container-hero h1, 
 .container-hero p, 
 .container-hero a {
@@ -135,12 +132,11 @@ did for the hero and the links section. HELP!!! */
 	text-align: center;
 }
 .one-third {
-	width:29%;
+	width:29.333%;
 	float: left;
 	position: relative;
 	min-height: 1px;
 	margin: 2%;
-	text-align: center;
 
 }
 .pricing:before,
