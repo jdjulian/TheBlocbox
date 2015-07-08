@@ -20,8 +20,9 @@ p {
 	line-height: 19px;
 	font-weight: 100;
 }
-.container-hero, .top-nav, .logo, .images, .pricing, .container, .box {
-	background-color: blue;
+.container-hero, .top-nav, .logo, .images, .pricing, .container, .box, .footer{
+	background-color: #212F54;
+	color: white;
 }
 
 .logo {
@@ -29,24 +30,16 @@ p {
 	display: block;
 }
 
-<<<<<<< HEAD
-
 /* Top Container */
 
 .top-nav img {
 	position: absolute;
 }
-=======
-/* Top Container */
 
-.top-nav ul {
-float: right;
-}
-
->>>>>>> 3994cc52a0f1d08d403d417b6b3c50d3abe7df0f
 .top-nav li {
 	margin: 0 10 0 0;
 	float: right;
+	color: white;
 }
 
 .top-nav:before,
@@ -84,9 +77,7 @@ how to properly align the photo on the page like I
 did for the hero and the links section. HELP!!! */
 
 .notes h2, 
-.notes p, 
-.links h2, 
-.links p {
+.notes p {
 	margin-right: 50%;
 	margin-left: auto;
 	display: block;
@@ -94,11 +85,12 @@ did for the hero and the links section. HELP!!! */
 	text-align: center;
 }
 
-.notes img, .links img {
-	margin-left: 60%;
+.notes img {
+	margin-left: 50%;
 	margin-right: 10%;
 	position: relative;
 }
+
 
 /* Images */
 
@@ -122,6 +114,20 @@ did for the hero and the links section. HELP!!! */
 	padding-top: 50px;
 }
 
+/* Links */
+.links h2, 
+.links p {
+	margin-right: 50%;
+	margin-left: auto;
+	display: block;
+	position: relative;
+	text-align: center;
+}
+.links img {
+	margin-left: 50%;
+	margin-right: 10%;
+	position: relative;
+}
 
 /* Pricing */
 
@@ -156,6 +162,9 @@ did for the hero and the links section. HELP!!! */
 }
 .right-footer img {
 	float: right;
+}
+.footer {
+	background-color: #dadada;
 }
 
 
