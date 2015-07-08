@@ -5,7 +5,6 @@ html, body{
 }
 body {
 	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
-	color:#333333;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Bree serif", Helvetica, Arial, sans-serif;
@@ -22,7 +21,7 @@ p {
 }
 .container-hero, .top-nav, .logo, .images, .pricing, .container, .box {
 	background-color: #212F54;
-	color: white;
+	color: #ffffff;
 }
 
 .logo {
@@ -47,6 +46,10 @@ p {
 .top-nav:after, {
 	clear: both;
 } 
+.container-hero {
+	min-height: 500px;
+	min-width: 1000px;
+}
 .container-hero h1, 
 .container-hero p, 
 .container-hero a {
@@ -60,7 +63,7 @@ p {
 	padding-top: 175px;
 }
 .container-hero a {
-	padding-bottom: 150px; 
+	padding-bottom: 10px; 
 }
 
 .container-hero img {
@@ -72,9 +75,10 @@ p {
 /* HELP!!! Notes & Links- I am unable to figure out 
 how to properly align the photo on the page like I
 did for the hero and the links section. HELP!!! */
-
 .notes h2, 
-.notes p {
+.notes p, 
+.links h2, 
+.links p {
 	margin-right: 50%;
 	margin-left: auto;
 	display: block;
@@ -82,7 +86,7 @@ did for the hero and the links section. HELP!!! */
 	text-align: center;
 }
 
-.notes img {
+.notes img, .links img {
 	margin-left: 50%;
 	margin-right: 10%;
 	position: relative;
@@ -91,24 +95,25 @@ did for the hero and the links section. HELP!!! */
 
 /* Images */
 
-.images p, .images h2 {
+.images p, 
+.images h2 {
 	margin-left: 50%;
 	margin-right: auto;
 	display: block;
 	position: relative;
 	text-align: center;
 }
-.images h2 {
-	padding-top: 100px;
+.images h2, . {
+	padding-top: 300px;
 }
+
 .images p {
 	padding-bottom: 150px;
-}
+} 
 .images img {
-	margin-right: 60%;
+	margin-right: 50%;
 	margin-left: 10%;
 	position: absolute;
-	padding-top: 50px;
 }
 
 /* Links */
@@ -162,6 +167,75 @@ did for the hero and the links section. HELP!!! */
 .footer {
 	background-color: #dadada;
 }
+
+/* Checkpoint 30 Media Queries */
+@media (min-width: 768px) {
+	.container-hero, .container, 
+	.notes, .images, .links, .footer {
+		width: 750px;
+	}
+}
+@media (min-width: 992px) {
+	.container-hero, .container, 
+	.notes, .images, .links {
+		width: 970px;
+	}
+	.one-half {
+		width: 46%;
+	}
+	.one-third {
+		width: 29.33333%;
+	}
+}
+@media (min-width: 1200px) {
+	.container-hero, .container, 
+	.notes, .images, .links, .footer {
+		width: 1170px;
+	}
+}
+
+/* HEADER */
+header {
+   color:#FFFFFF;
+   background: ##212F54;
+ }
+ header nav ul {
+   display:inline;
+   text-align: right;
+   float:right;
+   margin:0;
+ }
+ header nav ul > li {
+   list-style-type: none;
+   display: inline-block;
+   margin:0 15px;
+}
+ header nav ul > li.btn-outline {
+   padding:10px 15px;
+   border:2px solid #FFFFFF;
+   border-radius: 4px;
+ }
+ header nav ul > li.btn-outline:hover {
+   background:#FFFFFF;
+ }
+ header nav ul > li > a {
+   color:#FFFFFF;
+   text-decoration: none;
+ }
+ header nav ul > li.btn-outline:hover > a {
+   color:#34495E;
+ }
+
+ /* BUTTONS */
+ .btn {
+   border-radius: 2px;
+   color:#212F54;
+   font-weight: 700;
+   text-decoration: none;
+   padding:5px 5px;
+   background: #C1FCFF;
+   box-shadow: 0px 2px 0px 0px #22894E;
+ }
 
 
 /* CSS for OLD index.html. For each CSS note that follows after this, I have deleted the ending * and / 
