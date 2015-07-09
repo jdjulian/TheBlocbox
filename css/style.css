@@ -57,8 +57,12 @@ p {
 } 
 
 .container-hero {
+<<<<<<< HEAD
 	min-height: 100%;
 	min-width: 100%;
+=======
+	min-height: 500px;
+>>>>>>> ab461e9fcdb6f75347b35d93fc62263b390c6e3e
 }
 
 .container-hero h1, 
@@ -222,6 +226,7 @@ did for the hero and the links section. HELP!!! */
 	background-color: white;
 }
 
+<<<<<<< HEAD
 /* Checkpoint 30 Media Queries */
 @media (min-width: 768px) {
 	.container-hero, .container, 
@@ -248,6 +253,8 @@ did for the hero and the links section. HELP!!! */
 	}
 }
 
+=======
+>>>>>>> ab461e9fcdb6f75347b35d93fc62263b390c6e3e
 /* HEADER */
 header {
    color:#FFFFFF;
@@ -291,3 +298,36 @@ header {
    box-shadow: 0px 2px 0px 0px #22894E;
  }
 
+<<<<<<< HEAD
+=======
+ /* Checkpoint 30 Media Queries */
+@media (min-width: 768px) {
+	.container-hero, .container, 
+	.notes, .images, .links, .footer {
+		/*width: 750px;*/
+	}
+	.one-half {
+		width: 100%;
+	}
+}
+@media (min-width: 992px) {
+	.container-hero, .container, 
+	.notes, .images, .links {
+		/*width: 970px;*/
+	}
+	.one-half {
+		width: 46%;
+	}
+	.one-third {
+		width: 29.33333%;
+	}
+}
+@media (min-width: 1200px) {
+	.container-hero, .container, 
+	.notes, .images, .links, .footer {
+		width: 100%;
+	}
+}
+
+
+>>>>>>> ab461e9fcdb6f75347b35d93fc62263b390c6e3e
