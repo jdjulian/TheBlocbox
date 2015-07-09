@@ -24,9 +24,24 @@ p {
 	color: #ffffff;
 }
 
+.top-nav {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
 .logo {
 	float: left;
 	display: block;
+}
+
+.content-width {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.img-full {
+	width: 100%;
 }
 
 /* Top Container */
@@ -65,10 +80,11 @@ p {
 	padding-bottom: 10px; 
 }
 
+
+/*position absolute is very powerful and rarely used*/
 .container-hero img {
 	margin-left: 5%;
 	padding-top: 100px;
-	position: absolute;
 }
 
 /* HELP!!! Notes & Links- I am unable to figure out 
@@ -227,6 +243,7 @@ header {
 	}
 	.one-half {
 		width: 46%;
+		float: left;
 	}
 	.one-third {
 		width: 29.33333%;
