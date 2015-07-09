@@ -19,7 +19,7 @@ p {
 	line-height: 19px;
 	font-weight: 100;
 }
-.container-hero, .top-nav, .logo, .images, .pricing, .container, .box {
+.container-hero, .top-nav, .logo, .images, .pricing {
 	background-color: #212F54;
 	color: #ffffff;
 }
@@ -42,14 +42,25 @@ p {
 .top-nav:before,
 .top-nav:after {
 	content: "";
+	display: table;
 } 
 .top-nav:after, {
 	clear: both;
 } 
+.container-hero:before,
+.container-hero:after {
+	content: "";
+	display: table;
+} 
+.container-hero:after, {
+	clear: both;
+} 
+
 .container-hero {
-	min-height: 500px;
-	min-width: 1000px;
+	min-height: 100%;
+	min-width: 100%;
 }
+
 .container-hero h1, 
 .container-hero p, 
 .container-hero a {
@@ -59,6 +70,17 @@ p {
 	position: relative;
 	text-align: center;
 }
+/*
+.one-half h1, 
+.one-half p, 
+.one-half a {
+	margin-left: 50%;
+	margin-right: auto;
+	display: block;
+	position: relative;
+	text-align: center;
+} */
+
 .container-hero h1 {
 	padding-top: 175px;
 }
@@ -75,10 +97,17 @@ p {
 /* HELP!!! Notes & Links- I am unable to figure out 
 how to properly align the photo on the page like I
 did for the hero and the links section. HELP!!! */
+.notes:before,
+.notes:after {
+	content: "";
+	display: table;
+} 
+.notes:after, {
+	clear: both;
+} 
+
 .notes h2, 
-.notes p, 
-.links h2, 
-.links p {
+.notes p {
 	margin-right: 50%;
 	margin-left: auto;
 	display: block;
@@ -86,14 +115,23 @@ did for the hero and the links section. HELP!!! */
 	text-align: center;
 }
 
-.notes img, .links img {
+.notes img {
 	margin-left: 50%;
 	margin-right: 10%;
 	position: relative;
+	padding-bottom: 25px;
 }
 
 
 /* Images */
+.images:before,
+.images:after {
+	content: "";
+	display: table;
+} 
+.images:after, {
+	clear: both;
+} 
 
 .images p, 
 .images h2 {
@@ -103,20 +141,26 @@ did for the hero and the links section. HELP!!! */
 	position: relative;
 	text-align: center;
 }
-.images h2, . {
-	padding-top: 300px;
-}
 
 .images p {
-	padding-bottom: 150px;
+	padding-bottom: 25px;
 } 
 .images img {
 	margin-right: 50%;
 	margin-left: 10%;
-	position: absolute;
+	position: relative;
+	padding-top: 25px;
 }
 
 /* Links */
+.links:before,
+.links:after {
+	content: "";
+	display: table;
+} 
+.links:after, {
+	clear: both;
+} 
 .links h2, 
 .links p {
 	margin-right: 50%;
@@ -129,6 +173,7 @@ did for the hero and the links section. HELP!!! */
 	margin-left: 50%;
 	margin-right: 10%;
 	position: relative;
+	padding-bottom: 25px;
 }
 
 /* Pricing */
@@ -154,6 +199,15 @@ did for the hero and the links section. HELP!!! */
 }
 
 /* Footer */
+.footer:before,
+.footer:after {
+	content: "";
+	display: table;
+} 
+.footer:after {
+	clear: both;
+}
+
 .left-footer p {
 	font-size: 12px;
 }
@@ -165,20 +219,20 @@ did for the hero and the links section. HELP!!! */
 	float: right;
 }
 .footer {
-	background-color: #dadada;
+	background-color: white;
 }
 
 /* Checkpoint 30 Media Queries */
 @media (min-width: 768px) {
 	.container-hero, .container, 
 	.notes, .images, .links, .footer {
-		width: 750px;
+		width: 100%;
 	}
 }
 @media (min-width: 992px) {
 	.container-hero, .container, 
 	.notes, .images, .links {
-		width: 970px;
+		width: 100%;
 	}
 	.one-half {
 		width: 46%;
@@ -190,7 +244,7 @@ did for the hero and the links section. HELP!!! */
 @media (min-width: 1200px) {
 	.container-hero, .container, 
 	.notes, .images, .links, .footer {
-		width: 1170px;
+		width: 100%;
 	}
 }
 
@@ -237,175 +291,3 @@ header {
    box-shadow: 0px 2px 0px 0px #22894E;
  }
 
-
-/* CSS for OLD index.html. For each CSS note that follows after this, I have deleted the ending * and / 
-so that it omits all the CSS below this point. Just add the * and / to each CSS note 
-to re-instate everything below this point.
-
-
-html, body{
-	overflow-x: hidden;
-}
-body {
-	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
-	color:#333333;
-}
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Bree serif", Helvetica, Arial, sans-serif;
-}
-
-h2 {
-	font-size: 28px;
-	font-weight: normal;
-	margin-bottom: 5px;
-}
-p {
-	font-size: 16px;
-	line-height: 19px;
-	font-weight: 100;
-}
-
-
-/* benefits section styles *
-
-.feature1, .feature2, .feature3 {
-	width: 100%;
-	padding: 50px 0;
-	background-color: #dadada;
-}
-
-.feature2 {
-	background-color: #ffffff;
-}
-
-.notes, .images, .links {
-	width: 90%;
-	margin: 0 auto;
-}
-
-/* Checkpoint 29 homework- adding animated.css *
-
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-h1.animated, h1.fadeIn {
-	color: blue;
-}
-
-}
-h2 {
-	font-size: 28px;
-	font-weight: normal;
-	margin-bottom: 5px;
-}
-p {
-	font-size: 16px;
-	line-height: 19px;
-	font-weight: 100;
-}
-/* GRID *
-.container {
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-	position: relative;
-}
-
-li {
-	display: inline;
-	margin: 2px;
-	float: right;
-}
-.container:before,
-.container:after {
-	content: " ";
-	display: table;
-} 
-.container:after {
-	clear: both;
-}
-<<<<<<< HEAD
-.one-half {
-	width:96%;
-	float: right;
-	position: relative;
-	min-height: 1px;
-	margin: 20px;
-}
-
-.one-third {
-	width:29%;
-	float: left;
-	position: relative;
-	min-height: 1px;
-	margin: 15px;
-}
-
-.one-fourth {
-	width:96%;
-	float: left;
-	position: relative;
-	min-height: 1px;
-	margin: 13px;
-}
-=======
-.one-half, .one-third, .one-fourth {
-	float: left;
-	position: relative;
-	min-height: 1px;
-	margin: 2%;
-}
-
-.one-half {
-	width: 46%;
-}
-
-.one-third {
-	width: 29%;
-}
-
-
-
-
-
->>>>>>> c4a8c069807043c1721a4b0333883a3060f001b5
-
-*/
