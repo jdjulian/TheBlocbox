@@ -19,7 +19,7 @@ p {
 	line-height: 19px;
 	font-weight: 100;
 }
-.container-hero, .top-nav, .logo, .images, .pricing, .container, .box {
+.container-hero, .top-nav, .logo, .images, .pricing {
 	background-color: #212F54;
 	color: #ffffff;
 }
@@ -57,13 +57,29 @@ p {
 .top-nav:before,
 .top-nav:after {
 	content: "";
+	display: table;
 } 
 .top-nav:after, {
 	clear: both;
 } 
+.container-hero:before,
+.container-hero:after {
+	content: "";
+	display: table;
+} 
+.container-hero:after, {
+	clear: both;
+} 
+
 .container-hero {
+<<<<<<< HEAD
+	min-height: 100%;
+	min-width: 100%;
+=======
 	min-height: 500px;
+>>>>>>> ab461e9fcdb6f75347b35d93fc62263b390c6e3e
 }
+
 .container-hero h1, 
 .container-hero p, 
 .container-hero a {
@@ -73,6 +89,17 @@ p {
 	position: relative;
 	text-align: center;
 }
+/*
+.one-half h1, 
+.one-half p, 
+.one-half a {
+	margin-left: 50%;
+	margin-right: auto;
+	display: block;
+	position: relative;
+	text-align: center;
+} */
+
 .container-hero h1 {
 	padding-top: 175px;
 }
@@ -90,10 +117,17 @@ p {
 /* HELP!!! Notes & Links- I am unable to figure out 
 how to properly align the photo on the page like I
 did for the hero and the links section. HELP!!! */
+.notes:before,
+.notes:after {
+	content: "";
+	display: table;
+} 
+.notes:after, {
+	clear: both;
+} 
+
 .notes h2, 
-.notes p, 
-.links h2, 
-.links p {
+.notes p {
 	margin-right: 50%;
 	margin-left: auto;
 	display: block;
@@ -101,14 +135,23 @@ did for the hero and the links section. HELP!!! */
 	text-align: center;
 }
 
-.notes img, .links img {
+.notes img {
 	margin-left: 50%;
 	margin-right: 10%;
 	position: relative;
+	padding-bottom: 25px;
 }
 
 
 /* Images */
+.images:before,
+.images:after {
+	content: "";
+	display: table;
+} 
+.images:after, {
+	clear: both;
+} 
 
 .images p, 
 .images h2 {
@@ -118,20 +161,26 @@ did for the hero and the links section. HELP!!! */
 	position: relative;
 	text-align: center;
 }
-.images h2, . {
-	padding-top: 300px;
-}
 
 .images p {
-	padding-bottom: 150px;
+	padding-bottom: 25px;
 } 
 .images img {
 	margin-right: 50%;
 	margin-left: 10%;
-	position: absolute;
+	position: relative;
+	padding-top: 25px;
 }
 
 /* Links */
+.links:before,
+.links:after {
+	content: "";
+	display: table;
+} 
+.links:after, {
+	clear: both;
+} 
 .links h2, 
 .links p {
 	margin-right: 50%;
@@ -144,6 +193,7 @@ did for the hero and the links section. HELP!!! */
 	margin-left: 50%;
 	margin-right: 10%;
 	position: relative;
+	padding-bottom: 25px;
 }
 
 /* Pricing */
@@ -169,6 +219,15 @@ did for the hero and the links section. HELP!!! */
 }
 
 /* Footer */
+.footer:before,
+.footer:after {
+	content: "";
+	display: table;
+} 
+.footer:after {
+	clear: both;
+}
+
 .left-footer p {
 	font-size: 12px;
 }
@@ -180,9 +239,38 @@ did for the hero and the links section. HELP!!! */
 	float: right;
 }
 .footer {
-	background-color: #dadada;
+	background-color: white;
 }
 
+<<<<<<< HEAD
+/* Checkpoint 30 Media Queries */
+@media (min-width: 768px) {
+	.container-hero, .container, 
+	.notes, .images, .links, .footer {
+		width: 100%;
+	}
+}
+@media (min-width: 992px) {
+	.container-hero, .container, 
+	.notes, .images, .links {
+		width: 100%;
+	}
+	.one-half {
+		width: 46%;
+	}
+	.one-third {
+		width: 29.33333%;
+	}
+}
+@media (min-width: 1200px) {
+	.container-hero, .container, 
+	.notes, .images, .links, .footer {
+		width: 100%;
+	}
+}
+
+=======
+>>>>>>> ab461e9fcdb6f75347b35d93fc62263b390c6e3e
 /* HEADER */
 header {
    color:#FFFFFF;
@@ -226,6 +314,8 @@ header {
    box-shadow: 0px 2px 0px 0px #22894E;
  }
 
+<<<<<<< HEAD
+=======
  /* Checkpoint 30 Media Queries */
 @media (min-width: 768px) {
 	.container-hero, .container, 
@@ -257,3 +347,4 @@ header {
 }
 
 
+>>>>>>> ab461e9fcdb6f75347b35d93fc62263b390c6e3e
