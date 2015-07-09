@@ -48,7 +48,6 @@ p {
 } 
 .container-hero {
 	min-height: 500px;
-	min-width: 1000px;
 }
 .container-hero h1, 
 .container-hero p, 
@@ -168,32 +167,6 @@ did for the hero and the links section. HELP!!! */
 	background-color: #dadada;
 }
 
-/* Checkpoint 30 Media Queries */
-@media (min-width: 768px) {
-	.container-hero, .container, 
-	.notes, .images, .links, .footer {
-		width: 750px;
-	}
-}
-@media (min-width: 992px) {
-	.container-hero, .container, 
-	.notes, .images, .links {
-		width: 970px;
-	}
-	.one-half {
-		width: 46%;
-	}
-	.one-third {
-		width: 29.33333%;
-	}
-}
-@media (min-width: 1200px) {
-	.container-hero, .container, 
-	.notes, .images, .links, .footer {
-		width: 1170px;
-	}
-}
-
 /* HEADER */
 header {
    color:#FFFFFF;
@@ -237,175 +210,33 @@ header {
    box-shadow: 0px 2px 0px 0px #22894E;
  }
 
-
-/* CSS for OLD index.html. For each CSS note that follows after this, I have deleted the ending * and / 
-so that it omits all the CSS below this point. Just add the * and / to each CSS note 
-to re-instate everything below this point.
-
-
-html, body{
-	overflow-x: hidden;
+ /* Checkpoint 30 Media Queries */
+@media (min-width: 768px) {
+	.container-hero, .container, 
+	.notes, .images, .links, .footer {
+		/*width: 750px;*/
+	}
+	.one-half {
+		width: 100%;
+	}
 }
-body {
-	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
-	color:#333333;
+@media (min-width: 992px) {
+	.container-hero, .container, 
+	.notes, .images, .links {
+		/*width: 970px;*/
+	}
+	.one-half {
+		width: 46%;
+	}
+	.one-third {
+		width: 29.33333%;
+	}
 }
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Bree serif", Helvetica, Arial, sans-serif;
-}
-
-h2 {
-	font-size: 28px;
-	font-weight: normal;
-	margin-bottom: 5px;
-}
-p {
-	font-size: 16px;
-	line-height: 19px;
-	font-weight: 100;
-}
-
-
-/* benefits section styles *
-
-.feature1, .feature2, .feature3 {
-	width: 100%;
-	padding: 50px 0;
-	background-color: #dadada;
-}
-
-.feature2 {
-	background-color: #ffffff;
-}
-
-.notes, .images, .links {
-	width: 90%;
-	margin: 0 auto;
-}
-
-/* Checkpoint 29 homework- adding animated.css *
-
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-h1.animated, h1.fadeIn {
-	color: blue;
-}
-
-}
-h2 {
-	font-size: 28px;
-	font-weight: normal;
-	margin-bottom: 5px;
-}
-p {
-	font-size: 16px;
-	line-height: 19px;
-	font-weight: 100;
-}
-/* GRID *
-.container {
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-	position: relative;
-}
-
-li {
-	display: inline;
-	margin: 2px;
-	float: right;
-}
-.container:before,
-.container:after {
-	content: " ";
-	display: table;
-} 
-.container:after {
-	clear: both;
-}
-<<<<<<< HEAD
-.one-half {
-	width:96%;
-	float: right;
-	position: relative;
-	min-height: 1px;
-	margin: 20px;
-}
-
-.one-third {
-	width:29%;
-	float: left;
-	position: relative;
-	min-height: 1px;
-	margin: 15px;
-}
-
-.one-fourth {
-	width:96%;
-	float: left;
-	position: relative;
-	min-height: 1px;
-	margin: 13px;
-}
-=======
-.one-half, .one-third, .one-fourth {
-	float: left;
-	position: relative;
-	min-height: 1px;
-	margin: 2%;
-}
-
-.one-half {
-	width: 46%;
-}
-
-.one-third {
-	width: 29%;
+@media (min-width: 1200px) {
+	.container-hero, .container, 
+	.notes, .images, .links, .footer {
+		width: 100%;
+	}
 }
 
 
-
-
-
->>>>>>> c4a8c069807043c1721a4b0333883a3060f001b5
-
-*/
