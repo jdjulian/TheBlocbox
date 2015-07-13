@@ -123,9 +123,11 @@ position: relative;
 	float: left;
 }
 
+
 /* HELP!!! Notes & Links- I am unable to figure out 
 how to properly align the photo on the page like I
 did for the hero and the links section. HELP!!! */
+/*
 .benefits:before,
 .benefits:after {
 	content: "";
@@ -138,6 +140,7 @@ did for the hero and the links section. HELP!!! */
 	clear: both;
 	*zoom: 1;
 } 
+*/
 .notes:before,
 .notes:after {
 	content: "";
@@ -357,6 +360,12 @@ header {
  }
 
  /* Checkpoint 30 Media Queries */
+@media tv and (min-width: 700px) and (orientation: landscape) { 
+.container-hero {
+	width: 100%;
+	} 
+}
+
 @media (min-width: 768px) {
 	.container-hero, header, .pricing, 
 	.notes, .images, .links, .footer {
