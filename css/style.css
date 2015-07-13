@@ -3,17 +3,21 @@
 html, body{
 	overflow-x: hidden;
 }
+
 body {
 	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 }
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Bree serif", Helvetica, Arial, sans-serif;
 }
+
 h2 {
 	font-size: 28px;
 	font-weight: normal;
 	margin-bottom: 5px;
 }
+
 p {
 	font-size: 16px;
 	line-height: 19px;
@@ -21,7 +25,8 @@ p {
 }
 
 /* GRID */
-.container-hero, .top-nav, .notes, .images, .links, .container-pricing. .footer {
+
+.container-hero, .content-width, .benefits, .top-nav, .notes, .images, .links, .container-pricing. .footer {
 margin-right: auto;
 margin-left: auto;
 padding-left: 15px;
@@ -33,30 +38,68 @@ position: relative;
 	background-color: #212F54;
 	color: #ffffff;
 }
+/*
+.benefits:before,
+.top-nav:after {
+	content: "";
+	display: table;
+} 
 
+.benefits:after {
+	clear: both;
+} 
 
+.benefits {
+	clear: both;
+	*zoom: 1;
+} 
+*/
 .top-nav:before,
 .top-nav:after {
 	content: "";
 	display: table;
 } 
-.top-nav:after, {
+
+.top-nav:after {
 	clear: both;
 } 
+
+.top-nav {
+	clear: both;
+	*zoom: 1;
+} 
+
+
 .container-hero:before,
 .container-hero:after {
 	content: "";
 	display: table;
 } 
-.container-hero:after, {
+
+.container-hero:after {
 	clear: both;
 } 
 
 .container-hero {
-	min-height: 500px;
-	min-width: 100%;
-}
-/*
+	clear: both;
+	*zoom: 1;
+} 
+
+.content-width:before,
+.content-width:after {
+	content: "";
+	display: table;
+} 
+
+.content-width:after {
+	clear: both;
+} 
+
+.content-width {
+	clear: both;
+	*zoom: 1;
+} 
+
 .container-hero h1, 
 .container-hero p, 
 .container-hero a {
@@ -66,53 +109,51 @@ position: relative;
 	position: relative;
 	text-align: center;
 }
-*/
-
-
-.one-half h1, 
-.one-half p,
-.one-half a {
-	margin-left: 50%;
-	margin-right: 5%;
-	display: block;
-	position: relative;
-	text-align: center;
-} 
-
-.one-half p {
-	margin-bottom: 2%;
+.container-hero h1 {
+	margin-top: 5%;
 }
 
-.one-half h1 {
-	margin-top: 10%;
+.container-hero a {
+	width: 40%;
+	margin-bottom: 5%;
 }
 
-
-
-/*position absolute is very powerful and rarely used*/
 .container-hero img {
-	margin-left: auto;
-	padding-top: 100px;
+	margin: 5%;
 	float: left;
 }
-
 
 /* HELP!!! Notes & Links- I am unable to figure out 
 how to properly align the photo on the page like I
 did for the hero and the links section. HELP!!! */
-
+.benefits:before,
+.benefits:after {
+	content: "";
+	display: table;
+} 
+.benefits:after {
+	clear: both;
+} 
+.benefits {
+	clear: both;
+	*zoom: 1;
+} 
 .notes:before,
 .notes:after {
 	content: "";
 	display: table;
 } 
-.notes:after, {
+.notes:after {
 	clear: both;
+} 
+.notes {
+	clear: both;
+	*zoom: 1;
 } 
 
 .notes h2, 
 .notes p {
-	margin-right: 50%;
+	margin-right: auto;
 	margin-left: auto;
 	display: block;
 	position: relative;
@@ -120,13 +161,9 @@ did for the hero and the links section. HELP!!! */
 }
 
 .notes img {
-	margin-left: 50%;
-	margin-right: 10%;
-	position: relative;
-	padding-bottom: 25px;
+	margin: 5%;
+	float: right;
 }
-
-
 
 /* Images */
 .images:before,
@@ -134,13 +171,17 @@ did for the hero and the links section. HELP!!! */
 	content: "";
 	display: table;
 } 
-.images:after, {
+.images:after {
 	clear: both;
+} 
+.images {
+	clear: both;
+	*zoom: 1;
 } 
 
 .images p, 
 .images h2 {
-	margin-left: 50%;
+	margin-left: auto;
 	margin-right: auto;
 	display: block;
 	position: relative;
@@ -151,10 +192,8 @@ did for the hero and the links section. HELP!!! */
 	padding-bottom: 25px;
 } 
 .images img {
-	margin-right: 50%;
-	margin-left: 10%;
-	position: relative;
-	padding-top: 25px;
+	margin: 5%;
+	float: left;
 }
 
 /* Links */
@@ -163,22 +202,25 @@ did for the hero and the links section. HELP!!! */
 	content: "";
 	display: table;
 } 
-.links:after, {
+.links:after {
 	clear: both;
 } 
+.links {
+	clear: both;
+	*zoom: 1;
+} 
+
 .links h2, 
 .links p {
-	margin-right: 50%;
+	margin-right: auto;
 	margin-left: auto;
 	display: block;
 	position: relative;
 	text-align: center;
 }
 .links img {
-	margin-left: 50%;
-	margin-right: 10%;
-	position: relative;
-	padding-bottom: 25px;
+	margin: 5%;
+	float: right;
 }
 
 /* Pricing */
@@ -192,16 +234,22 @@ did for the hero and the links section. HELP!!! */
 	position: relative;
 	min-height: 1px;
 	margin: 2%;
-
 }
+
 .pricing:before,
 .pricing:after {
 	content: " ";
 	display: table;
 } 
+
 .pricing:after {
 	clear: both;
 }
+
+.pricing {
+	clear: both;
+	*zoom: 1;
+} 
 
 /* Footer */
 .footer:before,
@@ -209,6 +257,7 @@ did for the hero and the links section. HELP!!! */
 	content: "";
 	display: table;
 } 
+
 .footer:after {
 	clear: both;
 }
@@ -216,17 +265,19 @@ did for the hero and the links section. HELP!!! */
 .left-footer p {
 	font-size: 12px;
 }
+
 .link-middle-footer li {
 	display: inline;
 	font-size: 12px;
 }
+
 .right-footer img {
 	float: right;
 }
+
 .footer {
 	background-color: white;
 }
-
 
 /* HEADER */
 header {
@@ -307,18 +358,15 @@ header {
 
  /* Checkpoint 30 Media Queries */
 @media (min-width: 768px) {
-	.container-hero, .container, 
+	.container-hero, header, .pricing, 
 	.notes, .images, .links, .footer {
-		/*width: 750px;*/
-	}
-	.one-half {
 		width: 100%;
 	}
 }
 @media (min-width: 992px) {
-	.container-hero, .container, 
-	.notes, .images, .links {
-		/*width: 970px;*/
+	.container-hero, header, .pricing, 
+	.notes, .images, .links, .footer {
+		width: 970px;
 	}
 	.one-half {
 		width: 46%;
@@ -329,7 +377,7 @@ header {
 	}
 }
 @media (min-width: 1200px) {
-	.container-hero, .container, 
+	.container-hero, header, .pricing, 
 	.notes, .images, .links, .footer {
 		width: 100%;
 	}
