@@ -19,17 +19,21 @@ p {
 	line-height: 19px;
 	font-weight: 100;
 }
+
+/* GRID */
+.container-hero, .top-nav, .notes, .images, .links, .container-pricing. .footer {
+margin-right: auto;
+margin-left: auto;
+padding-left: 15px;
+padding-right: 15px; 
+position: relative;
+}
+
 .container-hero, .top-nav, .logo, .images, .pricing {
 	background-color: #212F54;
 	color: #ffffff;
 }
 
-.logo {
-	float: left;
-	display: block;
-}
-
-/* Top Container */
 
 .top-nav:before,
 .top-nav:after {
@@ -63,32 +67,40 @@ p {
 	text-align: center;
 }
 */
+
+
 .one-half h1, 
-.one-half p, 
+.one-half p,
 .one-half a {
-	margin-left: 55%;
+	margin-left: 50%;
 	margin-right: 5%;
 	display: block;
 	position: relative;
 	text-align: center;
 } 
 
-.container-hero h1 {
-	padding-top: 175px;
-}
-.container-hero a {
-	padding-bottom: 10px; 
+.one-half p {
+	margin-bottom: 2%;
 }
 
+.one-half h1 {
+	margin-top: 10%;
+}
+
+
+
+/*position absolute is very powerful and rarely used*/
 .container-hero img {
 	margin-left: auto;
 	padding-top: 100px;
 	float: left;
 }
 
+
 /* HELP!!! Notes & Links- I am unable to figure out 
 how to properly align the photo on the page like I
 did for the hero and the links section. HELP!!! */
+
 .notes:before,
 .notes:after {
 	content: "";
@@ -113,6 +125,7 @@ did for the hero and the links section. HELP!!! */
 	position: relative;
 	padding-bottom: 25px;
 }
+
 
 
 /* Images */
@@ -214,42 +227,20 @@ did for the hero and the links section. HELP!!! */
 	background-color: white;
 }
 
-/* Checkpoint 30 Media Queries */
-@media (min-width: 768px) {
-	.container-hero, .top-nav, .pricing, 
-	.benefits, .footer, header {
-		width: 750px;
-	}
-}
-@media (min-width: 992px) {
-	.container-hero, .top-nav, .pricing, 
-	.benefits, .footer, header {
-		width: 970px;
-	}
-	/*
-	.one-half {
-		width: 46%;
-	}
-	.one-third {
-		width: 29.33333%;
-	} */
-}
-@media (min-width: 1200px) {
-	.container-hero, .top-nav, .pricing, 
-	.benefits, .footer, header {
-		width: 1170px;
-	}
-}
 
 /* HEADER */
 header {
    color:#FFFFFF;
    background: ##212F54;
+   max-height: 100%;
+   max-width: 100%;
+   
  }
 
  header nav {
  	padding: 1em 0;
  }
+
  header nav ul {
    display:inline;
    text-align: right;
@@ -277,6 +268,32 @@ header {
    color:#34495E;
  }
 
+  /*
+ header .container-hero {
+   text-align: center;
+   display: block;
+   position: relative;
+ }
+
+ header .container-hero h1 {
+   font-size:48px;
+   font-weight: normal;
+   margin:95px 0 0;
+ }
+ 
+ header .container-hero p {
+   font-size: 22px;
+   line-height: 26px;
+   font-weight: 100;
+  margin:10px 0 40px; 
+ }
+ /*
+ header .container-hero img {
+   display: inline-block;
+   margin:3em auto 0;
+ }
+ */
+
  /* BUTTONS */
  .btn {
    border-radius: 2px;
@@ -287,3 +304,34 @@ header {
    background: #C1FCFF;
    box-shadow: 0px 2px 0px 0px #22894E;
  }
+
+ /* Checkpoint 30 Media Queries */
+@media (min-width: 768px) {
+	.container-hero, .container, 
+	.notes, .images, .links, .footer {
+		/*width: 750px;*/
+	}
+	.one-half {
+		width: 100%;
+	}
+}
+@media (min-width: 992px) {
+	.container-hero, .container, 
+	.notes, .images, .links {
+		/*width: 970px;*/
+	}
+	.one-half {
+		width: 46%;
+		float: left;
+	}
+	.one-third {
+		width: 29.33333%;
+	}
+}
+@media (min-width: 1200px) {
+	.container-hero, .container, 
+	.notes, .images, .links, .footer {
+		width: 100%;
+	}
+}
+
