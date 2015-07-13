@@ -31,14 +31,6 @@ p {
 
 /* Top Container */
 
-.top-nav img {
-	position: absolute;
-}
-.top-nav li {
-	margin: 0 10 0 0;
-	float: right;
-	color: white;
-}
 .top-nav:before,
 .top-nav:after {
 	content: "";
@@ -57,33 +49,29 @@ p {
 } 
 
 .container-hero {
-<<<<<<< HEAD
-	min-height: 100%;
-	min-width: 100%;
-=======
 	min-height: 500px;
->>>>>>> ab461e9fcdb6f75347b35d93fc62263b390c6e3e
+	min-width: 100%;
 }
-
+/*
 .container-hero h1, 
 .container-hero p, 
 .container-hero a {
-	margin-left: 50%;
+	margin-left: auto;
 	margin-right: auto;
 	display: block;
 	position: relative;
 	text-align: center;
 }
-/*
+*/
 .one-half h1, 
 .one-half p, 
 .one-half a {
-	margin-left: 50%;
-	margin-right: auto;
+	margin-left: 55%;
+	margin-right: 5%;
 	display: block;
 	position: relative;
 	text-align: center;
-} */
+} 
 
 .container-hero h1 {
 	padding-top: 175px;
@@ -93,9 +81,9 @@ p {
 }
 
 .container-hero img {
-	margin-left: 5%;
+	margin-left: auto;
 	padding-top: 100px;
-	position: absolute;
+	float: left;
 }
 
 /* HELP!!! Notes & Links- I am unable to figure out 
@@ -229,36 +217,39 @@ did for the hero and the links section. HELP!!! */
 <<<<<<< HEAD
 /* Checkpoint 30 Media Queries */
 @media (min-width: 768px) {
-	.container-hero, .container, 
-	.notes, .images, .links, .footer {
-		width: 100%;
+	.container-hero, .top-nav, .pricing, 
+	.benefits, .footer, header {
+		width: 750px;
 	}
 }
 @media (min-width: 992px) {
-	.container-hero, .container, 
-	.notes, .images, .links {
-		width: 100%;
+	.container-hero, .top-nav, .pricing, 
+	.benefits, .footer, header {
+		width: 970px;
 	}
+	/*
 	.one-half {
 		width: 46%;
 	}
 	.one-third {
 		width: 29.33333%;
-	}
+	} */
 }
 @media (min-width: 1200px) {
-	.container-hero, .container, 
-	.notes, .images, .links, .footer {
-		width: 100%;
+	.container-hero, .top-nav, .pricing, 
+	.benefits, .footer, header {
+		width: 1170px;
 	}
 }
 
-=======
->>>>>>> ab461e9fcdb6f75347b35d93fc62263b390c6e3e
 /* HEADER */
 header {
    color:#FFFFFF;
    background: ##212F54;
+ }
+
+ header nav {
+ 	padding: 1em 0;
  }
  header nav ul {
    display:inline;
@@ -297,37 +288,3 @@ header {
    background: #C1FCFF;
    box-shadow: 0px 2px 0px 0px #22894E;
  }
-
-<<<<<<< HEAD
-=======
- /* Checkpoint 30 Media Queries */
-@media (min-width: 768px) {
-	.container-hero, .container, 
-	.notes, .images, .links, .footer {
-		/*width: 750px;*/
-	}
-	.one-half {
-		width: 100%;
-	}
-}
-@media (min-width: 992px) {
-	.container-hero, .container, 
-	.notes, .images, .links {
-		/*width: 970px;*/
-	}
-	.one-half {
-		width: 46%;
-	}
-	.one-third {
-		width: 29.33333%;
-	}
-}
-@media (min-width: 1200px) {
-	.container-hero, .container, 
-	.notes, .images, .links, .footer {
-		width: 100%;
-	}
-}
-
-
->>>>>>> ab461e9fcdb6f75347b35d93fc62263b390c6e3e
