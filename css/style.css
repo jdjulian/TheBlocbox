@@ -195,6 +195,19 @@ did for the hero and the links section. HELP!!! */
    font-size:60px;
    margin:5% 0 0 0;
   }
+/*
+  .notes {
+   display:inline;
+   float:left;
+   margin:0;
+}
+
+.notes.one-half,
+.notes img {
+   vertical-align: middle;
+   margin:0 15px;
+}
+*/
 
 .notes i {
    color:#212F54;
