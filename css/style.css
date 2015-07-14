@@ -25,8 +25,18 @@ p {
 }
 
 /* GRID */
-
-.container-hero, .content-width, .benefits, .top-nav, .notes, .images, .links, .container-pricing. .footer {
+.content-width,
+.container, 
+.benefits, 
+.container-pricing,
+.container-hero, 
+.pricing,  
+.top-nav, 
+.notes, 
+.images, 
+.links,  
+.footer, 
+{
 margin-right: auto;
 margin-left: auto;
 padding-left: 15px;
@@ -38,249 +48,52 @@ position: relative;
 	background-color: #212F54;
 	color: #ffffff;
 }
-/*
-.benefits:before,
-.top-nav:after {
-	content: "";
-	display: table;
-} 
-
-.benefits:after {
-	clear: both;
-} 
-
-.benefits {
-	clear: both;
-	*zoom: 1;
-} 
-*/
 .top-nav:before,
-.top-nav:after {
-	content: "";
-	display: table;
-} 
-
-.top-nav:after {
-	clear: both;
-} 
-
-.top-nav {
-	clear: both;
-	*zoom: 1;
-} 
-
-
 .container-hero:before,
-.container-hero:after {
-	content: "";
-	display: table;
-} 
-
-.container-hero:after {
-	clear: both;
-} 
-
-.container-hero {
-	clear: both;
-	*zoom: 1;
-} 
-
 .content-width:before,
-.content-width:after {
-	content: "";
-	display: table;
-} 
-
-.content-width:after {
-	clear: both;
-} 
-
-.content-width {
-	clear: both;
-	*zoom: 1;
-} 
-
-.container-hero h1, 
-.container-hero p, 
-.container-hero a {
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	position: relative;
-	text-align: center;
-}
-.container-hero h1 {
-	margin-top: 5%;
-}
-
-.container-hero a {
-	width: 40%;
-	margin-bottom: 5%;
-}
-
-.container-hero img {
-	margin: 5%;
-	float: left;
-}
-
-
-/* HELP!!! Notes & Links- I am unable to figure out 
-how to properly align the photo on the page like I
-did for the hero and the links section. HELP!!! */
-/*
-.benefits:before,
-.benefits:after {
-	content: "";
-	display: table;
-} 
-.benefits:after {
-	clear: both;
-} 
-.benefits {
-	clear: both;
-	*zoom: 1;
-} 
-*/
 .notes:before,
-.notes:after {
-	content: "";
-	display: table;
-} 
-.notes:after {
-	clear: both;
-} 
-.notes {
-	clear: both;
-	*zoom: 1;
-} 
-
-.notes h2, 
-.notes p {
-	margin-right: auto;
-	margin-left: auto;
-	display: block;
-	position: relative;
-	text-align: center;
-}
-
-.notes img {
-	margin: 5%;
-	float: right;
-}
-
-/* Images */
 .images:before,
-.images:after {
-	content: "";
-	display: table;
-} 
-.images:after {
-	clear: both;
-} 
-.images {
-	clear: both;
-	*zoom: 1;
-} 
-
-.images p, 
-.images h2 {
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	position: relative;
-	text-align: center;
-}
-
-.images p {
-	padding-bottom: 25px;
-} 
-.images img {
-	margin: 5%;
-	float: left;
-}
-
-/* Links */
 .links:before,
-.links:after {
+.footer:before,
+.container:before,
+.pricing:before,
+.top-nav:after,
+.container-hero:after,
+.content-width:after,
+.notes:after,
+.images:after,
+.links:after,
+.footer:after,
+.container:after,
+.pricing:after {
 	content: "";
 	display: table;
 } 
-.links:after {
+
+.top-nav:after,
+.container-hero:after,
+.content-width:after,
+.notes:after,
+.images:after,
+.links:after,
+.footer:after,
+.container:after,
+.pricing:after  {
 	clear: both;
 } 
-.links {
-	clear: both;
-	*zoom: 1;
-} 
 
-.links h2, 
-.links p {
-	margin-right: auto;
-	margin-left: auto;
-	display: block;
-	position: relative;
-	text-align: center;
-}
-.links img {
-	margin: 5%;
-	float: right;
-}
-
-/* Pricing */
-
-.pricing h2, .pricing p {
-	text-align: center;
-}
-.one-third {
-	width:29.333%;
-	float: left;
-	position: relative;
-	min-height: 1px;
-	margin: 2%;
-}
-
-.pricing:before,
-.pricing:after {
-	content: " ";
-	display: table;
-} 
-
-.pricing:after {
-	clear: both;
-}
-
+.top-nav,
+.container-hero,
+.content-width,
+.notes,
+.images,
+.links,
+.footer,
+.container,
 .pricing {
 	clear: both;
 	*zoom: 1;
 } 
-
-/* Footer */
-.footer:before,
-.footer:after {
-	content: "";
-	display: table;
-} 
-
-.footer:after {
-	clear: both;
-}
-
-.left-footer p {
-	font-size: 12px;
-}
-
-.link-middle-footer li {
-	display: inline;
-	font-size: 12px;
-}
-
-.right-footer img {
-	float: right;
-}
-
-.footer {
-	background-color: white;
-}
 
 /* HEADER */
 header {
@@ -288,7 +101,6 @@ header {
    background: ##212F54;
    max-height: 100%;
    max-width: 100%;
-   
  }
 
  header nav {
@@ -322,7 +134,6 @@ header {
    color:#34495E;
  }
 
-  /*
  header .container-hero {
    text-align: center;
    display: block;
@@ -341,12 +152,188 @@ header {
    font-weight: 100;
   margin:10px 0 40px; 
  }
- /*
- header .container-hero img {
-   display: inline-block;
-   margin:3em auto 0;
+
+.container-hero h1, 
+.container-hero p, 
+.container-hero a {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+	text-align: center;
+}
+.container-hero h1 {
+	margin-top: 5%;
+}
+
+.container-hero a {
+	width: 40%;
+	margin-bottom: 5%;
+}
+.container-hero a.btn {
+	position: relative;
+	display: inline-block;
+}
+.container-hero img {
+	margin: 5%;
+	float: left;
+}
+
+
+/* HELP!!! Notes & Links- I am unable to figure out 
+how to properly align the photo on the page like I
+did for the hero and the links section. HELP!!! */
+
+
+.benefits {
+   text-align: center;
+   display:block;
+   position:relative;
  }
- */
+
+  .benefits i {
+   font-size:60px;
+   margin:5% 0 0 0;
+  }
+
+.notes i {
+   color:#212F54;
+   }
+
+.notes img {
+	margin: 5%;
+	float: right;
+}
+
+/* Images */
+.images p {
+	padding-bottom: 25px;
+} 
+.images img {
+	margin: 5%;
+	float: left;
+}
+
+/* Links */
+.links img {
+	margin: 5%;
+	float: right;
+}
+
+/* Pricing */
+
+.pricing {
+	text-align: center;
+	padding: 4em 0;
+}
+
+ .pricing h2, .pricing p {
+   color:#FFFFFF;
+ }
+ .pricing ul {
+   margin:0 auto;
+   padding:2em 0;
+ }
+ .pricing ul li {
+   list-style-type: none;
+ }
+
+.box {
+   padding:0 15px 15px;
+   background: #FFFFFF;
+   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+   min-height: 439px;
+   position: relative;
+   margin-top: 25px;
+ }
+
+ .box.middle {
+   min-height: 485px;
+   margin-top:0px;
+ }
+
+ .box h3 {
+   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+   font-weight: 600;
+   text-transform: uppercase;
+   background: #E2E2E2;
+   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.40);
+   left:0;
+   right:0;
+   top:0;
+   text-align: center;
+   margin:0 -15px 40px;
+   padding:10px 0;
+   color: #212F54;
+}
+
+ .box h4 {
+   font-size:50px;
+   font-weight: normal;
+   margin:40px 0 10px;
+   color:#3498DB;
+ }
+ .box h4 span {
+   font-size:32px;
+   vertical-align: top;
+ }
+
+ .box h4 span.month {
+   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+   font-weight: 100;
+   color:#888888;
+   font-size:20px;
+   vertical-align: middle;
+ }
+
+ .box ul li {
+   font-size:18px;
+   margin-bottom:20px;
+   font-weight: 100;
+   color: #212F54;
+ }
+
+.one-third {
+	width:29.333%;
+	float: left;
+	position: relative;
+	min-height: 1px;
+	margin: 2%;
+}
+
+ .box .btn {
+   position:absolute;
+   bottom:20px;
+   left:20px;
+   right:20px;
+ }
+ .small {
+   font-size: 12px;
+   color: #FEFEFE;
+   line-height: 15px;
+   font-style:italic;
+   text-align: center;
+   position: relative;
+ }
+
+/* Footer */
+
+.left-footer p {
+	font-size: 12px;
+}
+
+.link-middle-footer li {
+	display: inline;
+	font-size: 12px;
+}
+
+.right-footer img {
+	float: right;
+}
+
+.footer {
+	background-color: white;
+}
 
  /* BUTTONS */
  .btn {
@@ -360,35 +347,58 @@ header {
  }
 
  /* Checkpoint 30 Media Queries */
-@media tv and (min-width: 700px) and (orientation: landscape) { 
-.container-hero {
-	width: 100%;
-	} 
-}
-
-@media (min-width: 768px) {
-	.container-hero, header, .pricing, 
-	.notes, .images, .links, .footer {
-		width: 100%;
-	}
-}
-@media (min-width: 992px) {
-	.container-hero, header, .pricing, 
-	.notes, .images, .links, .footer {
-		width: 970px;
-	}
-	.one-half {
-		width: 46%;
-		float: left;
-	}
-	.one-third {
-		width: 29.33333%;
-	}
-}
-@media (min-width: 1200px) {
-	.container-hero, header, .pricing, 
-	.notes, .images, .links, .footer {
-		width: 100%;
-	}
-}
+ @media (min-width: 768px) {
+/*.content-width,
+.container, 
+.benefits, 
+.container-pricing,*/
+.container-hero,
+.pricing,  
+.top-nav, 
+.notes, 
+.images, 
+.links,  
+.footer,  {
+     /*width: 100%;*/
+      width: 750px;
+   }
+ }
+ @media (min-width: 992px) {
+/*.content-width,
+.container, 
+.benefits, 
+.container-pricing,*/
+.container-hero, 
+.pricing,  
+.top-nav, 
+.notes, 
+.images, 
+.links,  
+.footer,  {
+     /*width: 100%;*/
+     width: 970px;
+   }
+   .one-half {
+     width:100%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+ }
+ @media (min-width: 1200px) {
+/*.content-width,
+.container, 
+.benefits, 
+.container-pricing,*/
+.container-hero, 
+.pricing,  
+.top-nav, 
+.notes, 
+.images, 
+.links,  
+.footer, {
+     /*width: 100%;*/
+     width: 1170px;
+   }
+ }
 
