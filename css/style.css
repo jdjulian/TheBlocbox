@@ -274,19 +274,31 @@ header {
    position: relative;
 }
 /* Footer */
+ footer {
+   background-color: #FFFFFF;
+   color: #212F54;
+   height: 50px;
+ }
+ footer p, footer nav ul {
+   font-weight:100;
+   text-align: center;
+ }
+ footer nav ul li a {
+   color:#212F54;
+   text-decoration: none;
+ }
 .left-footer p {
 	font-size: 12px;
 }
 .link-middle-footer li {
+   list-style-type: none;
 	display: inline;
 	font-size: 12px;
 }
 .right-footer img {
 	float: right;
 }
-.footer {
-	background-color: white;
-}
+
 /* BUTTONS */
 .btn {
    border-radius: 2px;
