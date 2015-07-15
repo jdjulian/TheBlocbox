@@ -1,133 +1,104 @@
 /* CSS applied to all */
-
 html, body{
 	overflow-x: hidden;
 }
-
 body {
 	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 }
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Bree serif", Helvetica, Arial, sans-serif;
 }
-
 h2 {
 	font-size: 28px;
 	font-weight: normal;
 	margin-bottom: 5px;
 }
-
 p {
 	font-size: 16px;
 	line-height: 19px;
 	font-weight: 100;
 }
-
-/* GRID */
-.content-width {
-   margin: 0 auto;
-   width: 1170px;
+.notes,
+.links,
+.footer {
+   color: #212F54;
 }
-
-.content-width,
-.container, 
-.benefits, 
-.container-pricing,
 .container-hero, 
-.pricing,  
 .top-nav, 
-.notes, 
+.logo, 
 .images, 
-.links,  
-.footer, 
-{
-margin-right: auto;
-margin-left: auto;
-padding-left: 15px;
-padding-right: 15px; 
-position: relative;
+.pricing {
+   background-color: #212F54;
+   color: #ffffff;
 }
-
-.container-hero, .top-nav, .logo, .images, .pricing {
-	background-color: #212F54;
-	color: #ffffff;
-}
+/* GRID */
 .top-nav:before,
-.container-hero:before,
-.content-width:before,
-.notes:before,
-.images:before,
-.links:before,
-.footer:before,
-.container:before,
-.pricing:before,
 .top-nav:after,
+.container-hero:before,
 .container-hero:after,
-.content-width:after,
+.notes:before,
 .notes:after,
+.images:before,
 .images:after,
+.links:before,
 .links:after,
-.footer:after,
+.pricing:before,
+.pricing:after,
+.container:before,
 .container:after,
-.pricing:after {
+.footer:before,
+.footer:after {
 	content: "";
 	display: table;
 } 
-
 .top-nav:after,
 .container-hero:after,
-.content-width:after,
 .notes:after,
 .images:after,
 .links:after,
-.footer:after,
+.pricing:after,
 .container:after,
-.pricing:after  {
+.footer:after {
 	clear: both;
 } 
-
 .top-nav,
 .container-hero,
-.content-width,
 .notes,
 .images,
 .links,
-.footer,
-.container,
-.pricing {
+.pricing,
+.container, 
+.footer {
 	clear: both;
 	*zoom: 1;
 } 
-
 .one-half {
    width: 48%;
    margin: 0 1%;
    float: left;
 }
-
 /* HEADER */
 header {
    color:#FFFFFF;
    background: ##212F54;
-/*   max-height: 100%;
-*/   max-width: 100%;
+   max-width: 100%;
  }
-
  header nav {
  	padding: 1em 0;
  }
-
+ header .logo {
+   padding-left: 1em;
+ }
  header nav ul {
    display:inline;
    text-align: right;
    float:right;
-   margin:0;
+   margin: 0 15px;
  }
  header nav ul > li {
    list-style-type: none;
    display: inline-block;
-   margin:0 15px;
+   margin: 0;
 }
  header nav ul > li.btn-outline {
    padding:10px 15px;
@@ -144,39 +115,27 @@ header {
  header nav ul > li.btn-outline:hover > a {
    color:#34495E;
  }
-
  header .container-hero {
    text-align: center;
    display: block;
    position: relative;
  }
-
  header .container-hero h1 {
-   font-size:48px;
+   font-size:36px;
    font-weight: normal;
-   margin:95px 0 0;
  }
- 
  header .container-hero p {
-   font-size: 22px;
+   font-size: 20px;
    line-height: 26px;
    font-weight: 100;
-  margin:10px 0 40px; 
  }
-
+ 
 .container-hero h1, 
 .container-hero p, 
 .container-hero a {
 	margin-left: auto;
 	margin-right: auto;
-	display: block;
-	position: relative;
-	text-align: center;
 }
-.container-hero h1 {
-	margin-top: 5%;
-}
-
 .container-hero a {
 	width: 40%;
 	margin-bottom: 5%;
@@ -189,91 +148,61 @@ header {
 	margin: 5%;
 	float: left;
 }
-
 .img-full {
-   width: 100%;
+   width: 85%;
+   position: relative;
 }
-
-
-/* HELP!!! Notes & Links- I am unable to figure out 
-how to properly align the photo on the page like I
-did for the hero and the links section. HELP!!! */
-
-
+/* BENEFITS */
 .benefits {
    text-align: center;
    display:block;
    position:relative;
- }
-
+}
   .benefits i {
    font-size:60px;
-   margin:5% 0 0 0;
-  }
-/*
-  .notes {
+   margin: 5% 0 0 0;
+}
+/* .notes {
    display:inline;
    float:left;
    margin:0;
 }
-
 .notes.one-half,
 .notes img {
    vertical-align: middle;
    margin:0 15px;
-}
-*/
-
-.notes {
-   padding: 60px 0;
-}
-
+}*/
 .top30 {
    padding-top: 30px;
 }
-
-.notes i {
-   color:#212F54;
-   }
-
 .notes img {
 	margin: 5%;
 	float: right;
 }
-
-/* Images */
-.images p {
-	padding-bottom: 25px;
-} 
 .images img {
 	margin: 5%;
 	float: left;
 }
-
 /* Links */
 .links img {
 	margin: 5%;
 	float: right;
 }
-
 /* Pricing */
-
 .pricing {
 	text-align: center;
 	padding: 4em 0;
 }
-
- .pricing h2, .pricing p {
+.pricing h2, .pricing p {
    color:#FFFFFF;
- }
- .pricing ul {
+}
+.pricing ul {
    margin:0 auto;
    padding:2em 0;
- }
- .pricing ul li {
+}
+.pricing ul li {
    list-style-type: none;
- }
-
+}
 .box {
    padding:0 15px 15px;
    background: #FFFFFF;
@@ -281,14 +210,12 @@ did for the hero and the links section. HELP!!! */
    min-height: 439px;
    position: relative;
    margin-top: 25px;
- }
-
- .box.middle {
+}
+.box.middle {
    min-height: 485px;
    margin-top:0px;
- }
-
- .box h3 {
+}
+.box h3 {
    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
    font-weight: 600;
    text-transform: uppercase;
@@ -302,33 +229,29 @@ did for the hero and the links section. HELP!!! */
    padding:10px 0;
    color: #212F54;
 }
-
- .box h4 {
+.box h4 {
    font-size:50px;
    font-weight: normal;
    margin:40px 0 10px;
    color:#3498DB;
- }
- .box h4 span {
+} 
+.box h4 span {
    font-size:32px;
    vertical-align: top;
- }
-
- .box h4 span.month {
+}
+.box h4 span.month {
    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
    font-weight: 100;
    color:#888888;
    font-size:20px;
    vertical-align: middle;
- }
-
- .box ul li {
+}
+.box ul li {
    font-size:18px;
    margin-bottom:20px;
    font-weight: 100;
    color: #212F54;
  }
-
 .one-third {
 	width:29.333%;
 	float: left;
@@ -336,43 +259,36 @@ did for the hero and the links section. HELP!!! */
 	min-height: 1px;
 	margin: 2%;
 }
-
- .box .btn {
+.box .btn {
    position:absolute;
    bottom:20px;
    left:20px;
    right:20px;
- }
- .small {
+}
+.small {
    font-size: 12px;
    color: #FEFEFE;
    line-height: 15px;
    font-style:italic;
    text-align: center;
    position: relative;
- }
-
+}
 /* Footer */
-
 .left-footer p {
 	font-size: 12px;
 }
-
 .link-middle-footer li {
 	display: inline;
 	font-size: 12px;
 }
-
 .right-footer img {
 	float: right;
 }
-
 .footer {
 	background-color: white;
 }
-
- /* BUTTONS */
- .btn {
+/* BUTTONS */
+.btn {
    border-radius: 2px;
    color:#212F54;
    font-weight: 700;
@@ -380,66 +296,61 @@ did for the hero and the links section. HELP!!! */
    padding:5px 5px;
    background: #C1FCFF;
    box-shadow: 0px 2px 0px 0px #22894E;
- }
-
- /* Checkpoint 30 Media Queries */
-
-@media (min-width: 400px) {
-   .one-half {
+}
+/* Checkpoint 30 Media Queries */
+/*@media (min-width: 400px) {
+  /*.one-half {
       width: 100%;
       margin: 0 auto;
    }
-}
-
+   .one-half {
+      width: 50%;
+      margin: 0;
+   }
+}*/
 @media (min-width: 768px) {
-   /*.content-width,
-   .container, 
-   .benefits, 
-   .container-pricing,*/
+   .content-width,
+   .notes, 
+   .images, 
+   .links,
    .container-hero,
    .pricing,  
    .top-nav,  
    .footer  {
       width: 100%;
-   }
-   .content-width {
-      width: 90%;
       margin: 0 auto;
    }
    .one-half {
       width: 48%;
       margin: 0 1%;
    }
-
 }
- @media (min-width: 992px) {
-.content-width,
+@media (min-width: 992px) {
 .container-hero, 
 .pricing,  
 .top-nav, 
-/*.notes, 
+.notes, 
 .images, 
-.links,*/  
-.footer  {
-     /*width: 100%;*/
-     width: 970px;
+.links,
+.footer {
+     width: 100%;
+     margin: 0 auto;
    }
-   /*.one-half {
-     width:100%;
-   }*/
    .one-third {
      width:29.33333%;
    }
- }
+}
 @media (min-width: 1200px) {
    .container-hero,
    .top-nav {
       width: 100%;
+      margin: 0;
    }
    .content-width,
    .pricing,  
    .footer {
-     width: 1170px;
+     width: 100%;
+     margin: 0 auto;
    }
- }
+}
 
