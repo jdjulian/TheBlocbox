@@ -1,6 +1,6 @@
 /* CSS applied to all */
-html, body{
-	overflow-x: hidden;
+html, body {
+   overflow-x: hidden;
 }
 body {
 	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
@@ -73,21 +73,22 @@ p {
 	*zoom: 1;
 } 
 .one-half {
-   width: 48%;
-   margin: 0 1%;
+   width: 44%;
+   margin: 0 auto;
    float: left;
 }
+.container-hero .content-width,
+.benefits .content-width {
+   padding: 3em;
+}
 /* HEADER */
+nav .content-width {
+   padding: 1em 3em;
+}
 header {
    color:#FFFFFF;
    background: ##212F54;
    max-width: 100%;
- }
- header nav {
- 	padding: 1em 0;
- }
- header .logo {
-   padding-left: 1em;
  }
  header nav ul {
    display:inline;
@@ -99,7 +100,7 @@ header {
    list-style-type: none;
    display: inline-block;
    margin: 0;
-}
+ }
  header nav ul > li.btn-outline {
    padding:10px 15px;
    border:2px solid #FFFFFF;
@@ -129,7 +130,9 @@ header {
    line-height: 26px;
    font-weight: 100;
  }
- 
+.container-hero {
+   padding-bottom: 3em;
+}
 .container-hero h1, 
 .container-hero p, 
 .container-hero a {
@@ -162,19 +165,8 @@ header {
    font-size:60px;
    margin: 5% 0 0 0;
 }
-/* .notes {
-   display:inline;
-   float:left;
-   margin:0;
-}
-.notes.one-half,
-.notes img {
-   vertical-align: middle;
-   margin:0 15px;
-}*/
-.top30 {
-   padding-top: 30px;
-}
+.top30 {padding-top: 30px;}
+
 .notes img {
 	margin: 5%;
 	float: right;
@@ -191,7 +183,7 @@ header {
 /* Pricing */
 .pricing {
 	text-align: center;
-	padding: 4em 0;
+	padding: 3em 0;
 }
 .pricing h2, .pricing p {
    color:#FFFFFF;
@@ -203,6 +195,12 @@ header {
 .pricing ul li {
    list-style-type: none;
 }
+.pricing-menu,
+.container-pricing:first-child,
+.container {
+   padding-left: 3em;
+   padding-right: 3em;
+}
 .box {
    padding:0 15px 15px;
    background: #FFFFFF;
@@ -213,7 +211,7 @@ header {
 }
 .box.middle {
    min-height: 485px;
-   margin-top:0px;
+   margin-top: 0px;
 }
 .box h3 {
    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
@@ -273,7 +271,7 @@ header {
    text-align: center;
    position: relative;
 }
-/* Footer */
+/* Footer*/ 
  footer {
    background-color: #FFFFFF;
    color: #212F54;
@@ -289,6 +287,7 @@ header {
  }
 .left-footer p {
 	font-size: 12px;
+   padding-left: 3em;
 }
 .link-middle-footer li {
    list-style-type: none;
@@ -297,6 +296,8 @@ header {
 }
 .right-footer img {
 	float: right;
+   background: transparent;
+   padding-right: 3em;
 }
 
 /* BUTTONS */
@@ -310,16 +311,30 @@ header {
    box-shadow: 0px 2px 0px 0px #22894E;
 }
 /* Checkpoint 30 Media Queries */
-/*@media (min-width: 400px) {
-  /*.one-half {
+@media (min-width: 400px) {
+  .one-half {
       width: 100%;
       margin: 0 auto;
    }
-   .one-half {
-      width: 50%;
-      margin: 0;
+   header nav img {
+      width: 80px;
    }
-}*/
+   nav .content-width {
+      padding-right: 3em;
+   }
+
+   .one-third {
+      width: 100%;
+   }
+   .box.middle {
+   margin-top: 25px;
+   }
+  /*.right-footer .logo {
+   position: relative;
+   display: inline-block;
+   vertical-align: middle;
+   }*/
+}
 @media (min-width: 768px) {
    .content-width,
    .notes, 
@@ -333,8 +348,17 @@ header {
       margin: 0 auto;
    }
    .one-half {
-      width: 48%;
-      margin: 0 1%;
+      width: 44%;
+      margin: 0 auto;
+   }
+    .one-third {
+      width: 29.333%;
+   }
+    .box.middle {
+   margin-top: 0px;
+   }
+    header nav ul {
+   padding-right: 6em;
    }
 }
 @media (min-width: 992px) {
@@ -363,6 +387,9 @@ header {
    .footer {
      width: 100%;
      margin: 0 auto;
+   }
+   .one-third {
+      width: 29.333%;
    }
 }
 
