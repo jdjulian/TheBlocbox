@@ -275,7 +275,7 @@ header {
  footer {
    background-color: #FFFFFF;
    color: #212F54;
-   height: 50px;
+   padding: 20px 0 100px 0;
  }
  footer p, footer nav ul {
    font-weight:100;
@@ -285,6 +285,41 @@ header {
    color:#212F54;
    text-decoration: none;
  }
+
+footer ul {
+   text-align: center;
+}
+
+footer li {
+   list-style-type: none;
+   float: left;
+   margin: 0 10px 0 0;
+   font-size: 12px;
+   text-align: center;
+
+}
+
+footer li a {
+   margin-right: 10px;
+}
+
+.left-footer {
+   width: 25%;
+   float: left;
+}
+
+.link-middle-footer {
+   width: 50%;
+   float: left;
+}
+
+.right-footer {
+   width: 25%;
+   float: right;
+}
+
+
+
 .left-footer p {
 	font-size: 12px;
    padding-left: 3em;
@@ -299,6 +334,21 @@ header {
    background: transparent;
    padding-right: 3em;
 }
+
+.large-middle {
+   width: 50%;
+   float: left;
+   text-align: center;
+}
+
+.small-left, .small-right {
+   width: 25%;
+   float: left;
+}
+
+
+
+
 
 /* BUTTONS */
 .btn {
@@ -329,12 +379,35 @@ header {
    .box.middle {
    margin-top: 25px;
    }
+
+   .left-footer, .link-middle-footer {
+      width: 100%;
+   }
+
+   .right-footer {
+      display: none;
+   }
   /*.right-footer .logo {
    position: relative;
    display: inline-block;
    vertical-align: middle;
    }*/
 }
+
+@media (min-width: 600px) {
+   .left-footer {
+      width: 35%;
+   }
+
+   .link-middle-footer {
+      width: 65%;
+      float: right;
+   }
+
+}
+
+
+
 @media (min-width: 768px) {
    .content-width,
    .notes, 
@@ -359,6 +432,19 @@ header {
    }
     header nav ul {
    padding-right: 6em;
+   }
+
+   .left-footer {
+      width: 25%;
+   }
+
+   .link-middle-footer {
+      width: 50%;
+      float: left;
+   }
+
+   .right-footer {
+      display: block;
    }
 }
 @media (min-width: 992px) {
