@@ -520,6 +520,11 @@ header {
    margin: 0 0 0 10px;
    color: #FFFFFF;
 }
+#menu-settings .fa-cog {
+   font-size: 20px;
+   margin: 0 auto;
+
+}
 .left-nav .settings a {
    color: #FFFFFF;
    text-decoration: none;
@@ -528,15 +533,10 @@ header {
    margin-right: 10px;
    margin-top: 8px;
 }
-.settings ul:nth-child(2) li {
+#menu-settings li {
    font-size: 12px;
-   float: left;
-   margin: 10px auto;
 }
-.settings .fa-cog {
-   margin: 0 auto;
-   font-size: 20px;
-}
+
 /* CONTENT */
 .content {
    padding: 6em 1% 1.5em;

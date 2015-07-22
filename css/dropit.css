@@ -59,32 +59,48 @@
     font-weight: 100;
 }
 
-/*Checkpoint 35 Assignment 
-.menu-settings .dropit {
+/*Checkpoint 35 Assignment*/ 
+#menu-settings .dropit-submenu {
+    top: -125px;
+}
+#menu-settings .dropit-submenu:after {
+    /*bottom: -8px;
+    right: 10px;*/
+    /*width: 0;
+    height: 0;*
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;*/
+    border-top: 10px solid #fff;
+    border-bottom: 0;
+    margin-top: 110px;
+
+}
+/*#menu-settings .dropit {
     list-style: none;
     padding: 0;
     margin: 15px 0 0;
     display: inline-block;
+    float: right;
 }
-.menu-settings .dropit .dropit-trigger { position: relative; }
-.menu-settings .dropit .dropit-submenu {
+#menu-settings .dropit .dropit-trigger { position: relative; }
+#menu-settings .dropit .dropit-submenu {
     position: absolute;
-    bottom: 100%;
+    /*top: 100%;
     right: 0; 
     z-index: 1000;
     display: none;
-    min-width: 150px;
+    min-width: 100px;
     list-style: none;
     padding: 20px;
     margin: 20px 0 0;
 }
-.menu-settings .dropit .dropit-open .dropit-submenu { 
+#menu-settings .dropit .dropit-open .dropit-submenu { 
     display: block;
     background: #FFFFFF;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
     border-radius: 4px;
 }
-.menu-settings .dropit .dropit-open .dropit-submenu:before {
+#menu-settings .dropit .dropit-open .dropit-submenu:after {
     content: " ";
     position: absolute;
     border-style: solid;
@@ -93,19 +109,19 @@
     display: block;
     width: 0;
     z-index: 1;
-    top: 8px;
+  /*bottom: -8px;
     right: 10px;
 }
-.menu-settings .dropit .dropit-open .dropit-submenu li {
+#menu-settings .dropit .dropit-open .dropit-submenu li {
     display: block;
     margin-bottom: 20px;
 }
-.menu-settings .dropit .dropit-open .dropit-submenu li:last-child {
+#menu-settings .dropit .dropit-open .dropit-submenu li:last-child {
     margin-bottom: 0px;
 }
-.menu-settings .dropit .dropit-open .dropit-submenu li a {
+#menu-settings .dropit .dropit-open .dropit-submenu li a {
     color:#34495E;
     text-decoration: none;
     font-family: "Ubuntu", Helvetica, Arial, sans-serif;
     font-weight: 100;
-} */
+}*/
